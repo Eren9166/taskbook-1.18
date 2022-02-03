@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "taskbook",
+  "version": "${version}",
+
+  "name": "Task Book",
+  "description": "Adds a task book to the game! You can edit the book and keep track of the things you need to do.",
+  "authors": [
+    "ErenYrd"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.erenyrd.taskbook.TaskBook"
+    ]
+  },
+  "mixins": [
+    "taskbook.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.18.x",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
